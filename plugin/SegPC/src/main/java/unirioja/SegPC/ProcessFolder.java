@@ -271,7 +271,7 @@ public class ProcessFolder {
 					imp1.setRoi(rm.getRoi(i));
 					rm.runCommand(imp1, "Fill");
 
-					IJ.saveAs(imp1, "BMP", "/home/jonathan/Escritorio/SegPC/submission_and_evaluation_scripts/preds3/"
+					IJ.saveAs(imp1, "BMP", dir + "/preds/"
 							+ title + "_" + (i + found) + ".bmp");
 					imp1.changes = false;
 					imp1.close();
